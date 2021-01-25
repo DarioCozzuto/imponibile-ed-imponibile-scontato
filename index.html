@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>imponibile e imponibile scontato-prompt-alert</title>
+</head>
+<script>
+	prezzoString=prompt("Inserisci il prezzo dell' oggetto da acquistare");
+	prezzo=parseFloat(prezzoString);
+	quantitaString=prompt("Inserisci la quantita di oggetti da acquistare");
+	quantita=parseFloat(quantitaString);
+	
+	imponibile=quantita*prezzo;
+	sconto=imponibile*0.2;
+	imponibileScontato=imponibile-sconto;
+	
+	if(imponibile>=10)
+	{alert("Il prezzo è:"+imponibileScontato);}
+	else
+	{alert("Il prezzo è:"+imponibile);} 
+	
+	</script>
+<body>
+</body>
+</html>
